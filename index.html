@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+    
+ <!---
+    
+    This is the index.html webpage which is mainly focus on taking input from user  ,
+    such as name ,number of cookies , color of cookies , min and max number . 
+    Then it send this all data to fortunecookies.php webpage to filter input and show the result. (Fortune Cookies)
+    This program was created on 3rd october 2020.
+    
+    @author Utsavkumar M Patel (000820474).
+    
+  -->
+
+
+
+<head>
+    
+    <title> Fortune Cookies Form </title>
+
+    <meta charset= "UTF-8">
+    <meta name= "viewport" content= "width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    
+
+
+</head>
+
+<body>
+      
+      
+      <h2> Fill out this form to get to know your fortune via cookies!!  </h2> <hr>
+      
+      
+      <div class ="mainform">
+        
+        
+     
+        <form method = "GET" action="fortunecookies.php"> <!--Form tag start here-->
+           
+            <br /> <br />
+            
+            <!--Take the user name ,color ,number of cookies as well as min and max luckey number as an input via form-->
+
+            <h3>Your Name :  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                                       
+               <input type= "text" name = "name" size= "20"  required placeholder= " Enter Your Name Here !! " /> 
+            </h3>
+            <h3>Select Cookies Color : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+               <input type= "color" value = "#CA4ECA" name= "colorcookies" /> 
+            </h3>
+            <h3>Number of Cookies :   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                 <input type= "number"  min= "1" name= "ncookies" placeholder= " Enter Number of Cookies You Want !! " required />
+            </h3> 
+            <h3>Min Lucky Number : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                                   
+                   <input type = "number" name= "minluck" placeholder= " Min Luckey Number !! " min = "1" required />
+            </h3>
+            <h3>Max Lucky Number :          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                                                
+              <input type = "number" name= "maxluck" placeholder= " Max Luckey Number !! " min = "1" required /> 
+            </h3>
+            
+
+            
+
+            <h3>    <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <!--Submit Button to Submit the form-->
+                <input name= "Submit" type = "submit" />
+
+                
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <!--Reset Button to Clear the form-->
+                <input type= "reset" value= "Reset" name= "Clear" /> 
+            </h3>  
+        
+        </form> <!--Form tag close here-->
+
+
+      </div>
+
+
+      <!-- Copyright & Program Creator Information -->
+  
+      <h6> &copy;UTSAVKUMAR M PATEL (000820474).</h6>
+     
+     
+</body>
+
+</html>
